@@ -1,3 +1,8 @@
+# Setup --------------------------------------------------------------------------------------------
+requireNamespace("dplyr")
+requireNamespace("gt")
+requireNamespace("nanoparquet")
+
 # Load data ----------------------------------------------------------------------------------------
 ratings <- nanoparquet::read_parquet("ratings.parquet")
 episodes <- nanoparquet::read_parquet("episodes.parquet")
